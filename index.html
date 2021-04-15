@@ -6,14 +6,20 @@
 			Based upon: https://www.tourismpei.com/  -->
 
 		<style>	
+      body {
+        background-color: rgb(84, 231, 247);
+      }
+
       #header{
-        background-color: rgb(173, 216, 230);
+        background-color: rgb(237, 231, 166);
         position: fixed;
         top: 1%;
-        width: 100%;
+        left: 1%;
+        width: 98%;
         font-size: 16px;
         font-family: Arial;
         z-index: 1;
+        border-style: ridge;
       }
       td {
         width: 15%;
@@ -24,7 +30,7 @@
         display: inline-block;
       }
       .dropbtn {
-        background-color: rgb(173, 216, 230);
+        background-color: rgb(237, 231, 166);
         color: blue;
         font-size: 16px;
         border: none;
@@ -43,9 +49,8 @@
       }
 
       #title {
-        position: absoluted;
         text-align: center;
-        background-color: grey;
+        background-color: rgb(173, 9, 108);
         color: white;
         font-size: 40px;
       }
@@ -57,12 +62,31 @@
         left: 1%;
         top: 20%;
         background-color: rgb(255, 153, 255);
+        border-style: double;
+      }
+      #links a:link {
+        color: yellow;
+      }
+      #links a:visited {
+        color: black;
       }
 
       #main {
         width: 50%;
         position: absolute;
         left: 25%;
+        height: 800px;
+        overflow: auto;
+        background-color: rgb(237, 66, 75);
+        color: white;
+        border-style: groove;
+      }
+      
+      #title2 {
+        float: left;
+        color: purple;
+        margin-right: 5px;
+        margin-botton: 5px;
       }
 
       #island {
@@ -77,8 +101,15 @@
       }
 
       #footer {
-        width: 100%;
+        position: absolute;
+        width: 98%;
         text-align: center;
+        top: 1000px;
+        background-color: rgb(1, 27, 46);
+        color: rgb(169, 212, 193);
+      }
+      #footer a:link {
+        color: yellow;
       }
 		</style>
 		<title>My Favourite Beaches</title>
@@ -121,8 +152,7 @@
 		
     <p id = 'main'>
 			<img src="Media/beach1.jpg" alt="Beautiful beach" width = 100%> <br>
-			ABOUT OUR BEACHES <br>
-      <br>
+			<span id = 'title2'>ABOUT <br> OUR <br> BEACHES</span>
 			With beaches that sing and others that stun visitors with their pristine blend of rustic solitude and splendid red sand, Prince Edward Island's sandy expanses continue to receive raves from all over the world, including a nomination as one of Canada's natural wonders.
       <br>
       "Walking along the beautiful white sand produces an interesting sound… akin to singing, or some would say, squeaking," the CBC wrote on its website. "It's a phenomenon that scientists still don't completely understand."
